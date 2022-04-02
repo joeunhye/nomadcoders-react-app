@@ -20,7 +20,8 @@ function Home() {
 		<>
 			{loading ? (
 				<div className={styles.loading}>
-					<img src="/img/loading.svg" alt="" />
+					{/* <img src="/img/loading.svg" alt="" /> */}
+					<img src={process.env.PUBLIC_URL + "/img/loading.svg"} alt="" />
 				</div>
 			) : (
 				<>

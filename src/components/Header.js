@@ -4,7 +4,8 @@ function Header() {
 	return (
 		<nav>
 			<h1 className={styles.logo}>
-				<img src="/img/logo.png" alt="" />
+				{/* <img src="/img/logo.png" alt="" /> */}
+				<img src={process.env.PUBLIC_URL + "/img/logo.png"} alt="" />
 			</h1>
 			<ul className={styles.menu}>
 				<li>

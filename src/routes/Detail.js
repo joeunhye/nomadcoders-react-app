@@ -8,7 +8,7 @@ function Detail() {
 	const getMovie = async () => {
 		const json = await (await fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)).json();
 		setMovie(json.data.movie);
-		console.log(json.data.movie);
+		console.log(json.data);
 	};
 	useEffect(() => {
 		getMovie();
@@ -31,6 +31,7 @@ function Detail() {
 						</span>
 						<strong>{movie.genres}</strong>
 						<p>{movie.description_full}</p>
+						<button>MORE VIEW</button>
 					</div>
 				</div>
 			</div>
