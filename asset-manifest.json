@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/nomadcoders-react-app/static/js/main.f8fee7e3.js",
+    "index.html": "/nomadcoders-react-app/index.html",
+    "main.f8fee7e3.js.map": "/nomadcoders-react-app/static/js/main.f8fee7e3.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.f8fee7e3.js"
+  ]
+}
