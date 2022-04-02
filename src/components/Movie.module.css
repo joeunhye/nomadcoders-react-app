@@ -1,0 +1,32 @@
+.movie {
+	flex: 1 1 10%;
+	margin: 0 1%;
+	color: #fff;
+}
+h2 {
+	margin: 10px 0;
+}
+h2 a {
+	font-size: 20px;
+	text-decoration: none;
+	color: #fff;
+}
+.imaWrap {
+	max-height: 350px;
+	overflow: hidden;
+}
+.summary {
+	font-weight: 100;
+	font-size: 15px;
+	opacity: 0.5;
+}
+.genre {
+	display: flex;
+	padding: 0;
+	font-size: 12px;
+	opacity: 0.7;
+}
+.genre li {
+	list-style-type: none;
+	margin-right: 10px;
+}

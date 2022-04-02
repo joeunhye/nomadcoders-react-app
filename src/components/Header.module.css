@@ -1,0 +1,25 @@
+nav {
+	display: flex;
+	margin: 30px 35px;
+}
+.logo {
+	margin: 0;
+	font-size: 0;
+}
+.logo img {
+	width: 150px;
+}
+.menu {
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+.menu li {
+	list-style-type: none;
+	margin: 0 20px;
+}
+.menu li a {
+	text-decoration: none;
+	color: #fff;
+	opacity: 0.5;
+}

@@ -1,6 +1,9 @@
-function Home() {
-	import Movie from "./components/Movie";
+import { useEffect, useState } from "react";
+import Movie from "../components/Movie";
+import Header from "../components/Header";
+import styles from "./Home.module.css";
 
+function Home() {
 	const [loading, setLoading] = useState(true);
 	const [movies, setMovies] = useState([]);
 	const getMovies = async () => {
@@ -12,19 +15,24 @@ function Home() {
 	useEffect(() => {
 		getMovies();
 	}, []);
-	console.log(movies);
+	// console.log(movies);
 	return (
-		<div>
+		<>
 			{loading ? (
-				<h1>Loading...</h1>
-			) : (
-				<div>
-					{movies.map(movie => (
-						<Movie key={movie.id} coverImage={movie.medium_cover_image} title={movie.title} summary={movie.summary} genres={movie.genres} />
-					))}
+				<div className={styles.loading}>
+					<img src="/img/loading.svg" alt="" />
 				</div>
+			) : (
+				<>
+					<Header />
+					<div className={styles.wrap}>
+						{movies.map(movie => (
+							<Movie key={movie.id} id={movie.id} coverImage={movie.medium_cover_image} title={movie.title} summary={movie.summary} genres={movie.genres} />
+						))}
+					</div>
+				</>
 			)}
-		</div>
+		</>
 	);
 }
 export default Home;
